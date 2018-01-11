@@ -11,9 +11,9 @@ app.get('/', function (req, res) {
 
 app.get('/:page', function (req, res) //:page pour passer une variable
 {
-  var p = req.params.page;
+  var par = req.params.page;
   console.log(req.params);
-  res.sendFile(__dirname+'/public/'+p+'.html')
+  res.sendFile(__dirname+'/public/'+par+'.html')
 })
 
 
